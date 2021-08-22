@@ -1,0 +1,62 @@
+/* Sign-up */
+
+.sign-up {
+    margin-left: auto;
+
+ &__title {
+   @extend %title-footer;
+}
+ }
+
+.form-sign-up  { 
+    @include centerdFlex();
+
+ &__input  {
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: rgba(47, 48, 58, 1);
+    padding-left: 16px;
+    margin-right: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    color: $primary-white-color;
+
+    @include transition(border);
+
+ &:hover {
+    border-color: $accent-color;
+}
+ }
+
+ &__button {
+    @extend %button;
+    position: relative;
+    padding: 10px 62px 10px 29px;
+ }
+
+ &__button:hover,
+ &__button:focus {
+   @extend %button-hover;
+}
+ 
+ &__button:hover &__icon,
+ &__button:focus &__icon {
+   fill: $accent-color;
+}
+
+ &__icon {
+    fill: $primary-white-color;
+    position: absolute;
+    top: 13px;
+    right: 29px;
+    @include transition(fill);
+ }
+}

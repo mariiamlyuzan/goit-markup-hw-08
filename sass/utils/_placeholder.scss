@@ -1,0 +1,72 @@
+%contact-link {
+    color: $primary-text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+}
+
+%title-footer {
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $primary-white-color;
+
+    margin-bottom: 20px;
+}
+
+%logo {
+    color: $primary-black-color;
+    font-family: $font-secondary;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+}
+
+%title-section {
+    color: $primary-title-color;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+%social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+%button {
+    min-height: 50px;
+    min-width: 200px;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.9;
+    color: $primary-white-color;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: $accent-color;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%button-hover {
+    background-color: $primary-white-color;
+    color: $accent-color;
+}

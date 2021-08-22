@@ -1,0 +1,42 @@
+ /* Work */
+
+.work {
+    padding-top: 47px;
+    @media screen and (max-width: 1199px ) {
+        display: none;
+    }
+
+ &__title {
+    @extend %title-section;
+}
+ }
+
+.work-list { 
+    @include centerdFlex(space-between);
+
+ &__item {
+    @include centerdFlex();
+    position: relative;
+}
+
+ &__box {
+    position: absolute;
+    @include centerdFlex(center, center);
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+ &__title { 
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+
+}
+ }

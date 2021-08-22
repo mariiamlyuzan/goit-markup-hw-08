@@ -1,0 +1,40 @@
+/* Contact nav */
+
+.header-contact { 
+    @include centerdFlex();
+    margin-left: auto;
+
+ &__link:hover &__icon,
+ &__link:focus &__icon {
+    fill: $accent-color;
+}
+
+ &__item:not(:first-child) { 
+        margin-left: 50px;
+    }
+
+ &__link {
+    color: $primary-text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    @include centerdFlex(center, center);
+
+    @include transition(color);
+
+ &:hover,
+ &:focus {
+    color: $accent-color;
+}
+ }
+
+ &__icon,
+ &__icon {
+    fill: $primary-text-color;
+    margin-right: 10px;
+    @include transition(fill);
+} 
+ }
+ 

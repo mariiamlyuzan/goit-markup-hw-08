@@ -1,0 +1,53 @@
+body {
+    background-color: $primary-white-color;
+    color: $primary-text-color;
+    font-family: $font-primary;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hide {
+    visibility: hidden;
+    font-size: 0;
+}
+
+ /* Container */ 
+
+ .container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        width: 1200px;
+      }
+}
+
+ /* Section */
+
+.section {
+    padding: 94px 0;
+
+}

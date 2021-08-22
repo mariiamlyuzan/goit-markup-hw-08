@@ -1,0 +1,22 @@
+ /* Logo */ 
+
+.basic-nav__logo {
+    @extend %logo;
+
+ &--blue {
+   color: $accent-color;
+}
+ }
+
+.address-footer__logo {
+    @extend %logo;
+    display: block;
+    margin-bottom: 20px;
+
+ &--blue {
+        color: $accent-color; 
+ }
+ &--white {
+     color: $primary-white-color;
+}
+ }
