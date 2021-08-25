@@ -1,27 +1,42 @@
 /* Projects */
  
 .projects {
+   @media screen and(min-width: 768px) {
+      
     @include centerdFlex();
     flex-wrap: wrap;
-    padding: 0; 
+    margin: -15px;
+   }
 
  &__item {
-    width: 370px;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     @include transition(box-shadow);
+    @media screen and (max-width: 768px) {
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+  }
+}
+
+  @media screen and(min-width: 768px) {
+     width: calc((100% - 4 * 15px) / 2);
+     margin: 15px;
+  }
 
  &:hover,
  &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
- &:not(:nth-child(3n)) {
-    margin-right: 30px; 
-}
-
+@media screen and(min-width: 1200px) {
+   width: calc((100% - 6 * 15px) / 3);
+   margin: 15px;
  &:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
 }
+ }
  }
 
  &__thumb {
@@ -62,6 +77,7 @@
     padding: 20px 24px;
     border: 1px solid $border-content-color;
     border-top: none;
+    flex-grow: 1;
 }
 
  &__title {

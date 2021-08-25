@@ -1,26 +1,54 @@
 /* Sign-up */
 
 .sign-up {
-    margin-left: auto;
+   @media screen and(min-width: 1200px) {
+      margin-left: auto;
+   }
+    
 
  &__title {
    @extend %title-footer;
+   @media screen and(max-width: 767px) {
+   text-align: center;}
+
+   @media screen and(min-width: 768px) {
+      transform: translateX(55%);
+   }
+
+   @media screen and(min-width: 1200px) {
+      transform: translateX(0);
+   }
 }
- }
+}
+ 
 
 .form-sign-up  { 
+
+   @media screen and(min-width: 768px) {
+      @include centerdFlex(center, center);
+      flex-direction: column;
+      
+      
+   }
+
+   @media screen and(min-width: 1200px) {
     @include centerdFlex();
+    flex-direction: row;
+      
+
+    
+} 
 
  &__input  {
-    width: 358px;
     height: 50px;
-
+    width: 100%;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: rgba(47, 48, 58, 1);
     padding-left: 16px;
-    margin-right: 12px;
+    
     cursor: pointer;
     font-size: 16px;
     line-height: 1.2;
@@ -31,6 +59,18 @@
 
     @include transition(border);
 
+    @media screen and(min-width: 768px){
+       width: 450px;
+      transform: translateX(30%);
+    }
+
+    @media screen and(min-width: 1200px){
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+      transform: translateX(0);
+     }
+
  &:hover {
     border-color: $accent-color;
 }
@@ -40,11 +80,20 @@
     @extend %button;
     position: relative;
     padding: 10px 62px 10px 29px;
+
+   
+
+  
+
+     @media screen and(max-width: 1199px){
+      transform: translateX(60%);
+     }
  }
 
  &__button:hover,
  &__button:focus {
    @extend %button-hover;
+
 }
  
  &__button:hover &__icon,

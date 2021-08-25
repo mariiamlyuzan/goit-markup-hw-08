@@ -66,8 +66,12 @@
     line-height: 1.7;    
     letter-spacing: 0.03em;
 
-    @include centerdFlex($type-cross: center);
+    @include centerdFlex(center, center);
     margin-bottom: 30px;
+    
+    @media screen and(max-width: 1199px){
+       font-size: 12px;
+    }
 
  &__input {
     position: absolute;
@@ -76,6 +80,7 @@
     height: 1px;
     margin: -1px;
     @include transition(all);
+
 }
 
  &__icon {

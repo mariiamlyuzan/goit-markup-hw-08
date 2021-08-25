@@ -7,12 +7,31 @@
 }
 
 .footer-content {
-    @include centerdFlex($type-cross: baseline);
-    padding: 0;
+
+    @media  screen and (min-width: 768px) {
+        @include centerdFlex($type-cross: baseline);
+        flex-wrap: wrap;
+
+     }
+     @media screen and(min-width: 1200px) {
+        @include centerdFlex($type-cross: baseline);
+       }
  }
 
 .address-footer {
-    margin-right: 70px;
+   
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 60px;
+   text-align: center;
+   @media screen and(min-width: 768px) {
+  
+   text-align: left;
+   }
+
+   @media screen and(max-width: 1199px) {
+      margin-left: 0;
+   }
 }
 
 .footer-contact {

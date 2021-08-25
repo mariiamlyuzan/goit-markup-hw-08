@@ -1,10 +1,19 @@
 .filters {
+
+    @media screen and(min-width: 480px) {
+        @include centerdFlex();
+        flex-wrap: wrap;
+    }
+
+    @media screen and(min-width: 768px) {
     @include centerdFlex(center);
+     flex-wrap: nowrap;
+    }
+    
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
 
-
- &__item:not(:last-child) {
-    margin-right: 8px;
-}
 
  &__button {
     display: inline-block;
@@ -22,6 +31,14 @@
     font-size: 16px;
     line-height: 1.6;
     @include transition(all);
+    margin-bottom: 40px;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 30px;
+    }
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
  &__button:hover,

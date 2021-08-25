@@ -4,6 +4,10 @@ body {
     font-family: $font-primary;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
