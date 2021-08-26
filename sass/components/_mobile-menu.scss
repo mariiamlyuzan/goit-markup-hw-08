@@ -1,0 +1,67 @@
+.menu-button {
+    @include centerdFlex(center, center);
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 999;
+ 
+    &:hover,
+    &:focus {
+       fill: $accent-color;
+    }
+ 
+    @media screen and (min-width: 768px) {
+       display: none;
+     }
+ }
+ 
+.icon-menu
+.navigation-close {
+    @include transition(fill);
+ }
+.menu-button .navigation-close {
+    display: none;
+    
+  }
+ 
+.menu-button.is-open .navigation-close {
+    display: block;
+ 
+ }
+ 
+.menu-button.is-open .icon-menu {
+    display: none;
+  }
+ 
+.menu-container {
+   background-color: $primary-white-color;
+   z-index: 998;
+ 
+ @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+    font-size: 40px;
+ 
+    &.is-open {
+       display: block;
+     }
+ } 
+ 
+ @media screen and (min-width: 767px) {
+    position: relative;
+ }
+ 
+ 
+ @media  screen and(min-width: 1200px) {
+    @include centerdFlex(flex-start, baseline);
+    position: static;
+ 
+ }
+ 
+ }
+ 
