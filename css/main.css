@@ -47,6 +47,7 @@
 @media screen and (max-width: 1199px) {
   .work__title, .team-work__title, .customers__title {
     font-size: 28px;
+    line-height: 1.1;
     margin-bottom: 30px;
   }
 }
@@ -325,6 +326,14 @@ img {
   max-width: 696px;
   margin: auto;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.6;
+    max-width: 360px;
+  }
 }
 
 .hero__button {
