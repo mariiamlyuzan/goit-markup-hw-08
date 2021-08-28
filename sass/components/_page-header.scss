@@ -78,7 +78,7 @@
    &:focus {
       color: $accent-color;
    }
-   
+   @media screen and (min-width: 768px) {
    &--first::after {
       width: 48px;
   }
@@ -87,7 +87,7 @@
       width: 78px;
   }
    }
-  
+}
    &__link--current {
       color: $accent-color;
   
