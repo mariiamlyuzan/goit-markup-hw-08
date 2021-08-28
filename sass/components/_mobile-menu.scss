@@ -57,11 +57,9 @@
     display: flex;
  }
  
- 
  @media  screen and(min-width: 1200px) {
     @include centerdFlex(flex-start, baseline);
     position: static;
- 
  }
  
  }

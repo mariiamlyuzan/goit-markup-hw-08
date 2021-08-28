@@ -16,7 +16,6 @@
       &:focus {
          color: $accent-color;
       }
-   
    }
 
    @media screen and(max-width: 767px) {
@@ -36,7 +35,6 @@
    @media screen and(min-width: 768px) {
  
       margin-left: 88px;
-      
    
      &__item {
         margin-bottom: 10px;

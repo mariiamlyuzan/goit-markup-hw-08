@@ -18,7 +18,7 @@
    }
 
    @media  screen and(min-width: 1200px){
-      padding: 24pxpx 0;
+      padding: 24px 0;
    }
  }
 
@@ -47,24 +47,17 @@
       &:focus {
          color: $accent-color;
       }
-
-     
-      
    }
    
    @media screen and (min-width: 768px) {
       @include centerdFlex(space-between, baseline);
       
-   
     }
-     /* margin-left: 93px;
-      margin-right: 305px;*/
 
    &__item:not(:last-child) {
       margin-right: 50px;
   }
      
-
    &__link {
       color: $primary-title-color;
       font-size: 14px;
@@ -74,7 +67,7 @@
       text-decoration: none;
   
       position: relative;
-      padding-bottom: 39px;
+      padding-bottom: 37px;
       @include transition(color);
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -88,8 +81,6 @@
    
    &--first::after {
       width: 48px;
-
-     
   }
   
    &--second::after {
