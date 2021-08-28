@@ -163,20 +163,25 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 24px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 26px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .basic-nav {
-    padding: 18px 0;
+    padding: 24pxpx 0;
   }
+}
+
+.site-nav {
+  /* margin-left: 93px;
+      margin-right: 305px;*/
 }
 
 @media screen and (max-width: 767px) {
@@ -186,21 +191,23 @@ img {
   .site-nav__item {
     margin-bottom: 32px;
   }
-  .site-nav__link {
-    color: #212121;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    font-weight: 500;
-    position: relative;
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .site-nav__link:hover, .site-nav__link:focus {
-    color: #2196F3;
-  }
+}
+
+.site-nav__link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196F3;
 }
 
 @media screen and (min-width: 768px) {
@@ -208,52 +215,63 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    margin-left: 93px;
-    margin-right: 305px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
-  .site-nav__item:not(:last-child) {
-    margin-right: 50px;
-  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 39px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-nav__link {
-    color: #212121;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 32px;
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-bottom: 67px;
   }
-  .site-nav__link:hover, .site-nav__link:focus {
-    color: #2196F3;
-  }
-  .site-nav__link--first::after {
-    width: 48px;
-  }
-  .site-nav__link--second::after {
-    width: 78px;
-  }
-  .site-nav__link--current {
-    color: #2196F3;
-  }
-  .site-nav__link--current::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 4px;
-    background: #2196F3;
-    border-radius: 2px;
-    opacity: 1;
-  }
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196F3;
+}
+
+.site-nav__link--first::after {
+  width: 48px;
+}
+
+.site-nav__link--second::after {
+  width: 78px;
+}
+
+.site-nav__link--current {
+  color: #2196F3;
+}
+
+.site-nav__link--current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+  opacity: 1;
 }
 
 /* Hero */
@@ -1029,9 +1047,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .header-contact {
-    position: absolute;
-    left: 70%;
-    top: -60%;
+    margin-left: 88px;
   }
   .header-contact__item {
     margin-bottom: 10px;
@@ -1616,6 +1632,9 @@ img {
 @media screen and (min-width: 767px) {
   .menu-container {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

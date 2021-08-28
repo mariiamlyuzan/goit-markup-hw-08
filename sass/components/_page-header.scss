@@ -13,12 +13,12 @@
       padding: 16px 0;
    }
    @media  screen and(min-width: 768px) {
-      @include centerdFlex(flex-start, center);
-      padding: 24px 0;
+      @include centerdFlex(space-between, baseline);
+      padding: 26px 0;
    }
 
    @media  screen and(min-width: 1200px){
-      padding: 18px 0;
+      padding: 24pxpx 0;
    }
  }
 
@@ -27,8 +27,10 @@
       margin-bottom: 302px;
     &__item {
        margin-bottom: 32px;
+      
     }
-   
+   }
+
       &__link {
          color: $primary-title-color;
          font-size: 40px;
@@ -45,13 +47,18 @@
       &:focus {
          color: $accent-color;
       }
+
+     
       
    }
-   }
+   
    @media screen and (min-width: 768px) {
-      @include centerdFlex();
-      margin-left: 93px;
-      margin-right: 305px;
+      @include centerdFlex(space-between, baseline);
+      
+   
+    }
+     /* margin-left: 93px;
+      margin-right: 305px;*/
 
    &__item:not(:last-child) {
       margin-right: 50px;
@@ -67,8 +74,12 @@
       text-decoration: none;
   
       position: relative;
-      padding-bottom: 32px;
+      padding-bottom: 39px;
       @include transition(color);
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         padding-bottom: 67px;
+      }
   
    &:hover,
    &:focus {
@@ -77,6 +88,8 @@
    
    &--first::after {
       width: 48px;
+
+     
   }
   
    &--second::after {
@@ -100,7 +113,7 @@
   }
    }
   }
-}
+
 
 
  
