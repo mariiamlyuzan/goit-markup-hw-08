@@ -13,7 +13,7 @@
 
     overflow-y: scroll;
     padding: 94px 15px;
-    z-index: 999;
+    z-index: 1000;
 
  &.is-hidden {
     visibility: visible;
@@ -38,12 +38,10 @@
     padding: 40px;
     max-width: 528px;
     width: 100%;
-    height: 581px;
     @include transition(transform);
     
     @media screen and(max-width: 1199px) {
      max-width: 450px;
-     height: 609px;
     }
 
  &__title {
