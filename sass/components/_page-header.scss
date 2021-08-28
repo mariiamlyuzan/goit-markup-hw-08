@@ -10,7 +10,7 @@
    
    @media  screen and(max-width: 767px) {
       @include centerdFlex(space-between, baseline);
-      padding: 24px 0;
+      padding: 16px 0;
    }
    @media  screen and(min-width: 768px) {
       @include centerdFlex(flex-start, center);
