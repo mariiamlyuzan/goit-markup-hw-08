@@ -350,6 +350,7 @@ img {
 @media screen and (max-width: 1199px) {
   .advantages {
     padding-bottom: 30px;
+    padding-top: 60px;
   }
 }
 
