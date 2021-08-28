@@ -25,33 +25,14 @@
 .site-nav {
    @media  screen and(max-width: 767px) {
       margin-bottom: 302px;
+
     &__item {
        margin-bottom: 32px;
-      
     }
    }
 
-      &__link {
-         color: $primary-title-color;
-         font-size: 40px;
-         font-weight: 500;
-         line-height: 1.2;
-         letter-spacing: 0.02em;
-         text-decoration: none;
-         font-weight: 500;
-     
-         position: relative;
-         @include transition(color);
-     
-      &:hover,
-      &:focus {
-         color: $accent-color;
-      }
-   }
-   
    @media screen and (min-width: 768px) {
       @include centerdFlex(space-between, baseline);
-      
     }
 
    &__item:not(:last-child) {
@@ -70,7 +51,11 @@
       padding-bottom: 37px;
       @include transition(color);
 
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
+   @media screen and (max-width: 767px) {
+      font-size: 40px;
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
          padding-bottom: 67px;
       }
   
