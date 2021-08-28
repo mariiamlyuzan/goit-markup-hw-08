@@ -600,6 +600,7 @@ img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -629,7 +630,6 @@ img {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    margin: -15px;
   }
 }
 
@@ -640,7 +640,7 @@ img {
 
 .customers-list__item {
   width: calc((100% - 4 * 15px) / 2);
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {

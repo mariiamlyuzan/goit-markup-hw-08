@@ -15,15 +15,16 @@
 .customers-list {
    @include centerdFlex(center,center);
    flex-wrap: wrap;
+   margin: -15px;
 
    @media  screen and (min-width: 768px) {
       @include centerdFlex(center, center);
       flex-wrap: wrap;
+
    }
 
    @media screen and(min-width: 1200px) {
       @include centerdFlex(space-between);
-      margin: -15px;
      }
    
 
@@ -34,7 +35,7 @@
 
  &__item {
    width: calc((100% - 4 * 15px) / 2);
-   margin-bottom: 30px;
+   margin: 15px;
 
      @media  screen and (min-width: 768px) {
       width: calc((100% - 6 * 15px) / 3);
