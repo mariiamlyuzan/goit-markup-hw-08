@@ -496,7 +496,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .team-work {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 
@@ -575,6 +575,13 @@ img {
 /* Customers */
 .customers {
   padding-top: 47px;
+}
+
+@media screen and (max-width: 1199px) {
+  .customers {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
 }
 
 .customers-list {
@@ -1059,6 +1066,12 @@ img {
   }
   .header-contact__item:not(:first-child) {
     margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    padding: 60px 0;
   }
 }
 

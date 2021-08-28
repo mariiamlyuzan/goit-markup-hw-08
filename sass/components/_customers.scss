@@ -2,6 +2,10 @@
 
 .customers {
     padding-top: 47px;
+    @media screen and(max-width: 1199px) {
+      padding-top: 30px;
+       padding-bottom: 60px;
+    }
 
  &__title {
     @extend %title-section;
