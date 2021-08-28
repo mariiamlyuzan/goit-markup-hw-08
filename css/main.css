@@ -941,6 +941,7 @@ img {
   .modal {
     max-width: 450px;
     height: 609px;
+    z-index: 999;
   }
 }
 
