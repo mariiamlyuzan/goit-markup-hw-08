@@ -6,6 +6,11 @@
  &--blue {
    color: $accent-color;
 }
+
+@media  screen and(min-width: 768px) and (max-width: 1199px)
+{
+    padding: 26px 0;
+ }
  }
 
 .address-footer__logo {
