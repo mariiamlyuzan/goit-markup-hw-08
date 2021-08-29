@@ -1572,6 +1572,8 @@ img {
   border: none;
   background-color: transparent;
   z-index: 999;
+  width: 40px;
+  height: 40px;
 }
 
 .menu-button:hover, .menu-button:focus {
