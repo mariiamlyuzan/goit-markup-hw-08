@@ -1,6 +1,12 @@
 /* Contact nav */
 
 .header-contact { 
+   @media screen and(min-width: 768px) {
+      margin-left: 88px; }
+
+   @media screen and(min-width: 1200px) {
+   margin-left: 305px;
+   }
 
    &__link {
       color: $primary-text-color;
@@ -21,20 +27,20 @@
    @media screen and(max-width: 767px) {
       @include centerdFlex();
       flex-direction: column-reverse;
-       margin-bottom: 64px;
+       margin-bottom: 64px; 
+
       &__icon {
          visibility: hidden;
       }
+   }
       &__link:hover,
       &__link:focus {
          color: $accent-color;
          font-size: 34px;
       }
-   }
+
      
-   @media screen and(min-width: 768px) {
- 
-      margin-left: 88px;
+   
    
      &__item {
         margin-bottom: 10px;
@@ -56,11 +62,11 @@
     margin-right: 10px;
     @include transition(fill);
 } 
-   }
-  
+   
    @media screen and(min-width: 1200px) {
       position: static;
       @include centerdFlex();
+
     &__item:not(:first-child) { 
       margin-left: 30px;
   }

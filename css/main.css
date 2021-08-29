@@ -185,6 +185,15 @@ img {
 @media screen and (min-width: 1200px) {
   .basic-nav {
     padding: 24px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1003,6 +1012,18 @@ img {
 }
 
 /* Contact nav */
+@media screen and (min-width: 768px) {
+  .header-contact {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    margin-left: 305px;
+  }
+}
+
 .header-contact__link {
   color: #757575;
   font-size: 24px;
@@ -1038,32 +1059,31 @@ img {
   .header-contact__icon {
     visibility: hidden;
   }
-  .header-contact__link:hover, .header-contact__link:focus {
-    color: #2196F3;
-    font-size: 34px;
-  }
 }
 
-@media screen and (min-width: 768px) {
-  .header-contact {
-    margin-left: 88px;
-  }
-  .header-contact__item {
-    margin-bottom: 10px;
-  }
-  .header-contact__link {
-    font-size: 14px;
-  }
-  .header-contact__link:hover .header-contact__icon,
-  .header-contact__link:focus .header-contact__icon {
-    fill: #2196F3;
-  }
-  .header-contact__icon, .header-contact__icon {
-    fill: #757575;
-    margin-right: 10px;
-    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.header-contact__link:hover, .header-contact__link:focus {
+  color: #2196F3;
+  font-size: 34px;
+}
+
+.header-contact__item {
+  margin-bottom: 10px;
+}
+
+.header-contact__link {
+  font-size: 14px;
+}
+
+.header-contact__link:hover .header-contact__icon,
+.header-contact__link:focus .header-contact__icon {
+  fill: #2196F3;
+}
+
+.header-contact__icon, .header-contact__icon {
+  fill: #757575;
+  margin-right: 10px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1620,6 +1640,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .menu-container {
+    margin-left: 93px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
