@@ -827,6 +827,7 @@ img {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1271,13 +1272,6 @@ img {
 .form-sign-up__button {
   position: relative;
   padding: 10px 62px 10px 29px;
-}
-
-@media screen and (max-width: 1199px) {
-  .form-sign-up__button {
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%);
-  }
 }
 
 .form-sign-up__button:hover .form-sign-up__icon,
