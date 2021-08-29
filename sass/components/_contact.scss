@@ -9,6 +9,10 @@
    @include centerdFlex();
    }
 
+     &__item {
+      margin-bottom: 10px;
+   }
+
    &__link {
       color: $primary-text-color;
       font-size: 24px;
@@ -33,19 +37,17 @@
       &__icon {
          visibility: hidden;
       }
-   }
       &__link:hover,
       &__link:focus {
          color: $accent-color;
          font-size: 34px;
       }
-
-     
    
-   
-     &__item {
-        margin-bottom: 10px;
-     }
+   }
+      &__link:hover,
+      &__link:focus {
+         color: $accent-color;
+      }
 
       &__link {
          font-size: 14px;

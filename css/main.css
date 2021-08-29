@@ -1047,6 +1047,10 @@ img {
   }
 }
 
+.header-contact__item {
+  margin-bottom: 10px;
+}
+
 .header-contact__link {
   color: #757575;
   font-size: 24px;
@@ -1082,15 +1086,14 @@ img {
   .header-contact__icon {
     visibility: hidden;
   }
+  .header-contact__link:hover, .header-contact__link:focus {
+    color: #2196F3;
+    font-size: 34px;
+  }
 }
 
 .header-contact__link:hover, .header-contact__link:focus {
   color: #2196F3;
-  font-size: 34px;
-}
-
-.header-contact__item {
-  margin-bottom: 10px;
 }
 
 .header-contact__link {
