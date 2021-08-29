@@ -20,7 +20,7 @@
 
    @media  screen and(min-width: 1200px){
       padding: 24px 0;
-      @include centerdFlex($type-cross: center);
+      @include centerdFlex(flex-start, baseline);
    }
  }
 
