@@ -5,11 +5,9 @@
 }
 
 .filters {
-
-    @media screen and(min-width: 480px) {
         @include centerdFlex();
         flex-wrap: wrap;
-    }
+    
 
     @media screen and(min-width: 768px) {
     @include centerdFlex(center);
