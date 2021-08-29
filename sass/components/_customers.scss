@@ -54,6 +54,7 @@
     padding: 16px 32px;
     border: 1px solid $icon-color;
     border-radius: 4px;
+    margin: 0 auto;
     @include transition();
 
  &:hover,
