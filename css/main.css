@@ -905,15 +905,16 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .address-footer {
+    margin-left: 0;
     text-align: left;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .address-footer {
-    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
