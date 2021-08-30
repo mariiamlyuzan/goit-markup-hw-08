@@ -7,9 +7,12 @@
     z-index: 999;
     width: 40px;
     height: 40px;
- 
-    &:hover,
-    &:focus {
+    @include transition(all);
+   
+ &:hover .icon-menu,
+ &:hover .navigation-close,
+ &:focus .icon-menu,
+ &:focus .navigation-close {
        fill: $accent-color;
     }
  
@@ -18,7 +21,7 @@
      }
  }
  
-.icon-menu
+.icon-menu,
 .navigation-close {
     @include transition(fill);
  }

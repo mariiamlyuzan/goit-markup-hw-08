@@ -69,10 +69,9 @@
     border-radius: 50px;
 
  &:hover .modal__icon,
- &:hover .modal__icon {
+ &:focus .modal__icon {
     fill: $accent-color;
 }
-
  }
 
  &__icon {
