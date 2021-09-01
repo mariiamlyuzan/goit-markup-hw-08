@@ -23,10 +23,14 @@
     fill: $primary-white-color;
 }
  }
-
- .join__title {
+.join {
+   @media screen and(min-width: 768px) and(max-width: 1199px) {
+      width: 50%;
+   }
+ &__title {
     @extend %title-footer;
     text-align: center;
+}
 }
 
 .social-footer {

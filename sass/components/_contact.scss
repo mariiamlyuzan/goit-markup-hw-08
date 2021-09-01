@@ -1,6 +1,12 @@
 /* Contact nav */
 
 .header-contact { 
+   @media screen and(max-width: 767px) {
+   @include centerdFlex();
+   flex-direction: column-reverse;
+    margin-bottom: 64px; 
+   }
+
    @media screen and(min-width: 768px) {
       margin-left: 88px;
       padding: 21px 0;
@@ -42,29 +48,25 @@
       }
    }
 
-   @media screen and(max-width: 767px) {
-      @include centerdFlex();
-      flex-direction: column-reverse;
-       margin-bottom: 64px; 
+   &__link--mobile {
+      font-size: 34px;
+   }
 
+   @media screen and(max-width: 767px) {
       &__icon {
          visibility: hidden;
       }
-      &__link:hover,
-      &__link:focus {
-         color: $accent-color;
-         font-size: 34px;
-      }
-   
    }
-      &__link:hover,
-      &__link:focus {
-         color: $accent-color;
-      }
 
+   @media screen and(min-width: 768px) {
+      &__link {
+      font-size: 12px;
+      }
+   }
+   @media screen and(min-width: 1200px) {
       &__link {
          font-size: 14px;
-         
+   }
       }
 
      &__link:hover &__icon,
