@@ -1710,13 +1710,17 @@ img {
     width: 100%;
     padding: 48px 40px;
     font-size: 40px;
-    overflow-x: hidden;
-    -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-container.is-open {
     display: block;
-    overflow-x: scroll;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

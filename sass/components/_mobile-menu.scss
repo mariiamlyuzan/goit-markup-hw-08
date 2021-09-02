@@ -54,12 +54,12 @@
     width: 100%;
     padding: 48px 40px;
     font-size: 40px;
-    overflow-x: hidden;
-    @include transition(all);
+    transform: translateY(-100%);
+    @include transition(transform);
     
     &.is-open {
        display: block;
-       overflow-x: scroll;
+       transform: translateY(0);
      }
  } 
  
