@@ -1577,6 +1577,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .join__title {
+    text-align: left;
+  }
+}
+
 .social-footer {
   display: -webkit-box;
   display: -ms-flexbox;

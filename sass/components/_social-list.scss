@@ -30,6 +30,10 @@
  &__title {
     @extend %title-footer;
     text-align: center;
+
+    @media screen and(min-width: 1200px) {
+      text-align: left;
+    }
 }
 }
 
