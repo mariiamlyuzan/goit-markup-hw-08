@@ -15,14 +15,15 @@
  }
 
 .team {
-    margin: -15px;
+   
     @media  screen and (min-width: 768px) {
     @include centerdFlex();
     flex-wrap: wrap;
+    margin: -15px;
   }
 
     @media  screen and (min-width: 1200px) {
-    @include centerdFlex(space-between);
+    justify-content: space-between;
     flex-wrap: nowrap;
 }
 

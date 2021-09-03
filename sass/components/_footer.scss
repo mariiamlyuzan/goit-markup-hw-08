@@ -12,11 +12,7 @@
     @media  screen and (min-width: 768px) {
         @include centerdFlex($type-cross: baseline);
         flex-wrap: wrap;
-
      }
-     @media screen and(min-width: 1200px) {
-        @include centerdFlex($type-cross: baseline);
-       }
  }
 
 .address-footer {
@@ -29,7 +25,8 @@
 
    @media screen and(min-width: 1200px) {
       text-align: left;
-      margin: 0 auto;
+      margin-right: 70px;
+      margin-bottom: 0;
    }
 }
 

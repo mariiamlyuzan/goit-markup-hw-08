@@ -16,18 +16,7 @@
    @include centerdFlex(center,center);
    flex-wrap: wrap;
    margin: -15px;
-
-   @media  screen and (min-width: 768px) {
-      @include centerdFlex(center, center);
-      flex-wrap: wrap;
-
-   }
-
-   @media screen and(min-width: 1200px) {
-      @include centerdFlex(space-between);
-     }
    
-
  &__link:hover &__icon,
  &__link:focus &__icon {
     fill: $accent-color;
@@ -44,7 +33,6 @@
   @media  screen and (min-width: 1200px) {
       width: calc((100% - 12 * 15px) / 6);
   }
-
 }
 
  &__link {

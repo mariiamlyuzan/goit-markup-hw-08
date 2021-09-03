@@ -5,10 +5,9 @@
       margin: 0 auto;
    }
    @media screen and(min-width: 1200px) {
-      margin-left: auto;
+      margin: 0;
    }
     
-
  &__title {
    @extend %title-footer;
    text-align: center;

@@ -1,37 +1,49 @@
 /* Contact nav */
 
 .header-contact { 
-   @media screen and(max-width: 767px) {
    @include centerdFlex();
    flex-direction: column-reverse;
     margin-bottom: 64px; 
-   }
+    margin-top: auto;
+   
 
    @media screen and(min-width: 768px) {
+      display: inline;
       margin-left: 88px;
       padding: 21px 0;
     }
 
    @media screen and(min-width: 1200px) {
-   margin-left: 305px;
-   @include centerdFlex();
-   padding: 0;
+      margin-left: 305px;
+      @include centerdFlex();
+      flex-direction: row;
+      padding: 0;
+      margin-bottom: 0;
    }
 
-     &__item {
+     &__item:not(:first-child) {
       margin-bottom: 10px;
-     
-   }
-   @media screen and(min-width: 768px){
+     }
+   
+   @media screen and(min-width: 768px) {
+      &__item:first-child {
+         margin-bottom: 10px;
+      }
       &__item:last-child {
-         margin-bottom: 0px;
+         margin-bottom: 0;
       }
    }
 
-   @media screen and(min-width: 1200px){
-      margin-bottom: 0px;
+   @media screen and(min-width: 1200px) {
+   
+      &__item:not(:first-child) { 
+         margin-left: 30px;
+     }
+     &__item:first-child {
+      margin-bottom: 0;
+     }
    }
-
+     
    &__link {
       color: $primary-text-color;
       font-size: 24px;
@@ -48,21 +60,30 @@
       }
    }
 
-   &__link--mobile {
+   &__link--blue {
       font-size: 34px;
+      color: $accent-color;
    }
 
-   @media screen and(max-width: 767px) {
-      &__icon {
-         visibility: hidden;
-      }
-   }
+ &__icon {
+    display: none;
+ }
 
    @media screen and(min-width: 768px) {
       &__link {
       font-size: 12px;
+      color: $primary-text-color;
       }
+
+      &__icon,
+      &__icon {
+         display: inline-block;
+         fill: $primary-text-color;
+         margin-right: 10px;
+         @include transition(fill);
+     } 
    }
+
    @media screen and(min-width: 1200px) {
       &__link {
          font-size: 14px;
@@ -71,22 +92,6 @@
 
      &__link:hover &__icon,
      &__link:focus &__icon {
-       fill: $accent-color;
-}
-
- &__icon,
- &__icon {
-    fill: $primary-text-color;
-    margin-right: 10px;
-    @include transition(fill);
-} 
-   
-   @media screen and(min-width: 1200px) {
-      position: static;
-      @include centerdFlex();
-
-    &__item:not(:first-child) { 
-      margin-left: 30px;
-  }
-   }
+       fill: $accent-color; 
+     }
 }

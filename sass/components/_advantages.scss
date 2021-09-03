@@ -15,12 +15,6 @@
         margin: -15px;
     }
 
-    @media  screen and (min-width: 1200px) {
-        @include centerdFlex(space-between);
-        flex-wrap: nowrap;
-        
-    }
-
  &__item {
      
     @media  screen and (min-width: 768px) {

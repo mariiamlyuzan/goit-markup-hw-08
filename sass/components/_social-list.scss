@@ -24,9 +24,16 @@
 }
  }
 .join {
+   margin-bottom: 60px;
    @media screen and(min-width: 768px) and(max-width: 1199px) {
       width: 50%;
    }
+
+   @media screen and(min-width: 1200px) {
+      margin-right: 93px;
+      margin-bottom: 0;
+   }
+
  &__title {
     @extend %title-footer;
     text-align: center;
@@ -39,7 +46,7 @@
 
 .social-footer {
     @include centerdFlex(center);
-    margin-bottom: 60px;
+    
 
  &__item:not(:last-child) { 
     margin-right: 10px;
