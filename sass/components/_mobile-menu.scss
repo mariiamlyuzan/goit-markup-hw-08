@@ -46,21 +46,22 @@
    z-index: 998;
    
  @media screen and (max-width: 767px) {
-    display: none;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 48px 40px;
-    transform: translateY(-100%) scale(0.5);
-    @include transition(transform);
+    transform: translateX(100%);
+    opacity: 0;
+    @include transition(all);
     
     &.is-open {
        display: flex;
        flex-direction: column;
-       transform: translateY(0) scale(1);
-       @include transition(transform);
+       transform: translateX(0);
+       opacity: 1;
+       @include transition(all);
      }
  } 
  
